@@ -8,14 +8,10 @@ export const meta: MetaFunction = () => {
 };
 
 const Header = () => {
-  return(<header>
-    <nav>
-      <ul>
-        <li><a href="./about">about</a></li>
-        <li><a href="https://github.com/Hendersonajardimj">github</a></li>
-        <li><a href="./about">Portfolio</a></li>
-      </ul>
-    </nav>
+  return(<header className="flex space-x-4 bg-orange-600">
+        <button className="hover:bg-cyan-600"><a href="./about">About</a></button>
+        <button className="hover:bg-cyan-600"><a href="https://github.com/Hendersonajardimj">Github</a></button>
+        <button className="hover:bg-cyan-600"><a href="./about">Portfolio</a></button>
   </header>)
   };
 
@@ -23,6 +19,8 @@ const Header = () => {
 
 export default function Index() {
   return (
+    <div className="">
     <Header/>
+    </div>
   );
 };
